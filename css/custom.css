@@ -1,0 +1,221 @@
+@import url('../dist/theme/black.css');
+
+@import url('https://smc.org.in/fonts/css/fonts.css');
+
+
+/*********************************************
+* GLOBAL STYLES
+*********************************************/
+:root {
+    --r-background-color: #191919;
+    --r-main-font: 'Malini', Source Sans Pro, Helvetica, sans-serif;
+    --r-main-font-size: 42px;
+    --r-main-color: #fff;
+    --r-block-margin: 20px;
+    --r-heading-margin: 0 0 20px 0;
+    --r-heading-font:  'Malini', Source Sans Pro, Helvetica, sans-serif;
+    --r-heading-color: #fff;
+    --r-heading-line-height: 1.2;
+    --r-heading-letter-spacing: normal;
+    --r-heading-text-transform: uppercase;
+    --r-heading-text-shadow: none;
+    --r-heading-font-weight: 600;
+    --r-heading1-text-shadow: none;
+    --r-heading1-size: 2.5em;
+    --r-heading2-size: 1.6em;
+    --r-heading3-size: 1.3em;
+    --r-heading4-size: 1em;
+    --r-code-font: monospace;
+    --r-link-color: #42affa;
+    --r-link-color-dark: #068de9;
+    --r-link-color-hover: #8dcffc;
+    --r-selection-background-color: rgba(66, 175, 250, 0.75);
+    --r-selection-color: #fff;
+    --r-overlay-element-bg-color: 240, 240, 240;
+    --r-overlay-element-fg-color: 0, 0, 0;
+}
+
+.chapter-title {
+  background: linear-gradient(
+    90deg,
+    hsla(358, 85%, 68%, 1) 0%,
+    hsla(41, 98%, 49%, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 0.5rem;
+}
+
+/* Variable instances */
+.nupuram-thin {
+    font-variation-settings: "wght" 100, "wdth" 100, "slnt" 0;
+  }
+.malini-thin {
+    font-variation-settings: "wght" 100, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-oblique-thin {
+    font-variation-settings: "wght" 100, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-condensed-thin {
+    font-variation-settings: "wght" 100, "wdth" 75, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-expanded-thin {
+    font-variation-settings: "wght" 100, "wdth" 125, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-extralight {
+    font-variation-settings: "wght" 200, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-extralight-oblique {
+    font-variation-settings: "wght" 200, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-light {
+    font-variation-settings: "wght" 300, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-light-oblique {
+    font-variation-settings: "wght" 300, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-condensed-light {
+    font-variation-settings: "wght" 300, "wdth" 75, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-expanded-light {
+    font-variation-settings: "wght" 300, "wdth" 125, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-regular {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-oblique {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-condensed {
+    font-variation-settings: "wght" 400, "wdth" 75, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-semicondensed {
+    font-variation-settings: "wght" 400, "wdth" 87.5, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-condensed-oblique {
+    font-variation-settings: "wght" 400, "wdth" 75, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-expanded {
+    font-variation-settings: "wght" 400, "wdth" 125, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-semiexpanded {
+    font-variation-settings: "wght" 400, "wdth" 112.5, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-medium {
+    font-variation-settings: "wght" 500, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-medium-oblique {
+    font-variation-settings: "wght" 500, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-condensed-medium {
+    font-variation-settings: "wght" 500, "wdth" 75, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-expanded-medium {
+    font-variation-settings: "wght" 500, "wdth" 125, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-semibold {
+    font-variation-settings: "wght" 600, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-semibold-oblique {
+    font-variation-settings: "wght" 600, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-bold {
+    font-variation-settings: "wght" 700, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-bold-oblique {
+    font-variation-settings: "wght" 700, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-condensed-bold {
+    font-variation-settings: "wght" 700, "wdth" 75, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-semicondensed-bold {
+    font-variation-settings: "wght" 700, "wdth" 87.5, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-expanded-bold {
+    font-variation-settings: "wght" 700, "wdth" 125, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-extrabold {
+    font-variation-settings: "wght" 800, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-extrabold-oblique {
+    font-variation-settings: "wght" 800, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-black {
+    font-variation-settings: "wght" 900, "wdth" 100, "slnt" 0, "opsz" 20;
+  }
+
+  .malini-black-oblique {
+    font-variation-settings: "wght" 900, "wdth" 100, "slnt" -12, "opsz" 20;
+  }
+
+  .malini-text {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0, "opsz" 10;
+  }
+
+  .malini-display {
+    font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-thin-display {
+    font-variation-settings: "wght" 100, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-extralight-display {
+    font-variation-settings: "wght" 200, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-light-display {
+    font-variation-settings: "wght" 300, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-medium-display {
+    font-variation-settings: "wght" 500, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-semibold-display {
+    font-variation-settings: "wght" 500, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-bold-display {
+    font-variation-settings: "wght" 700, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-extrabold-display {
+    font-variation-settings: "wght" 800, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
+
+  .malini-black-display {
+    font-variation-settings: "wght" 800, "wdth" 100, "slnt" 0, "opsz" 96;
+  }
